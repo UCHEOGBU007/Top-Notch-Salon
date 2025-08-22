@@ -1,0 +1,231 @@
+.footercontainer {
+  height: 260px;
+  /* background-color: #d9d9d9; */
+  background-image: url("/src/assets/Footerbackground6.jpg");
+  background-position: center;
+  color: #eeeeee;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  padding: 3em;
+}
+
+.footercontainer img {
+  height: 190px;
+  width: 130px;
+}
+
+.section h5 {
+  font-size: larger;
+  font-weight: bolder;
+  /* color: #333333; */
+}
+
+.section ul {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px;
+}
+
+.link {
+  text-decoration: none;
+  /* color: #495e57; */
+  color: #eeeeee;
+  margin-left: 5px;
+  padding: 5px;
+}
+
+.link:hover {
+  text-decoration: underline;
+  text-decoration-color: #be8211; /* Little Lemon's accent color */
+  text-decoration-thickness: 2px;
+  color: #be8211;
+}
+
+/*Footer contacts Styling starts here */
+
+.footercontainer address {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletterForm {
+  display: flex;
+  margin-top: 2em;
+}
+
+/* Email Input */
+.emailInput {
+  flex: 1;
+  padding: 0.55rem 0.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+/* Submit Button */
+.submitButton {
+  background-color: #be8211;
+  color: #fff;
+  border: none;
+  padding: 0 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  background-color: #e59412;
+}
+
+.footercontainer address a {
+  margin-top: 15px;
+  font-weight: bolder;
+  /* color: #495e57; */
+  text-decoration: none;
+}
+
+.footercontainer address a:hover {
+  color: #faaa16;
+  background: #333333;
+  border-radius: 5px;
+}
+
+.copyright {
+  background: #293632;
+  color: #faaa16;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-align: center;
+  justify-items: center;
+  height: 60px;
+  padding-top: 20px;
+}
+
+/* Social media icons */
+
+.mediaicons svg {
+  width: 30px;
+  height: 30px;
+  margin-top: 15px;
+  padding: 8px;
+  border-radius: 50%;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.mediaicons svg:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* Specific brand colors */
+.mediaicons svg:nth-child(1) {
+  background-color: #1877f2;
+} /* Facebook */
+.mediaicons svg:nth-child(2) {
+  background-color: #e4405f;
+} /* Instagram */
+.mediaicons svg:nth-child(3) {
+  background-color: #0a66c2;
+} /* LinkedIn */
+.mediaicons svg:nth-child(4) {
+  background-color: #1da1f2;
+} /* Twitter */
+
+/* Responsive: Stack inputs on smaller screens for news letter */
+@media (max-width: 768px) {
+  .newsletterForm {
+    flex-direction: column;
+  }
+
+  .emailInput,
+  .submitButton {
+    width: 100%;
+    border-radius: 4px;
+  }
+
+  .emailInput {
+    margin-bottom: 0.75rem;
+  }
+}
+
+@media (max-width: 890px) {
+  .footercontainer {
+    flex-direction: column;
+
+    height: auto;
+    padding: 2em 1em;
+    text-align: left;
+    margin: 0;
+  }
+
+  .footercontainer img {
+    height: 150px;
+    width: 100px;
+    margin-bottom: 1em;
+  }
+
+  .footercontainer form {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 1.5em;
+  }
+
+  .footercontainer label,
+  .footercontainer input {
+    display: block;
+    width: 100%;
+    font-size: 0.9rem;
+    margin-top: 0.5em;
+  }
+
+  .section {
+    margin-bottom: 2em;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .section h5 {
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+
+  .section ul {
+    padding: 0;
+    margin: 0;
+    float: left;
+  }
+
+  .link {
+    padding: 8px 0;
+    display: block;
+  }
+
+  .footercontainer address {
+    width: 100%;
+    max-width: 300px;
+    text-align: left;
+    margin-bottom: 2em;
+  }
+
+  .mediaicons {
+    float: left;
+  }
+
+  .footercontainer address a {
+    font-size: 0.95rem;
+  }
+
+  .copyright {
+    font-size: 0.95em;
+    padding: 15px;
+    height: auto;
+  }
+}
