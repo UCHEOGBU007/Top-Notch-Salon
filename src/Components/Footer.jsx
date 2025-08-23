@@ -29,18 +29,18 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link to="/Menu" className={Style.link}>
-                MENU
+              <Link to="/Services" className={Style.link}>
+                SERVICES
               </Link>
             </li>
             <li>
-              <Link to="/Reservation" className={Style.link}>
-                RESERVATION
+              <Link to="/Gallery" className={Style.link}>
+                GALLERY
               </Link>
             </li>
             <li>
-              <Link to="/Order" className={Style.link}>
-                ONLINE-ORDER
+              <Link to="/Appointment" className={Style.link}>
+                APPOINTMENT
               </Link>
             </li>
           </ul>
@@ -53,6 +53,8 @@ const Footer = () => {
           <div className={Style.mediaicons}>
             <FaFacebookF /> <IoLogoInstagram /> <FaLinkedinIn /> <FaTwitter />
           </div>
+          <h5 className={Style.subscribeh5}>Subscribe News Letter:</h5>
+
           <form className={Style.newsletterForm} action="" method="post">
             <input
               type="email"
@@ -70,8 +72,8 @@ const Footer = () => {
       <div className={Style.copyright}>
         <p>
           {" "}
-          &copy; {new Date().getFullYear()} Little Lemon Restaurant. All rights
-          reserved.
+          &copy; {new Date().getFullYear()} Top Notch Barbers and Salon. All
+          rights reserved.
         </p>
       </div>
     </>
