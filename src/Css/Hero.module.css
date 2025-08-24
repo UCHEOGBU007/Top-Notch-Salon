@@ -23,6 +23,7 @@
   line-height: 1.2;
   font-weight: 2rem;
   background: transparent;
+  z-index: 1;
 }
 
 .Hero span {
@@ -35,6 +36,7 @@
   line-height: 1.6;
   background: transparent;
   font-weight: 900;
+  z-index: 1;
 }
 
 .ctaButton {
