@@ -40,19 +40,28 @@
 }
 
 .ctaButton {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   margin-top: 2rem;
-  padding: 0.75rem 1.5rem;
-  background-color: #c0a062;
-  color: #000;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
 }
 
-.ctaButton:hover {
-  background-color: #d4b378;
+.appointment {
+  padding: 0.9rem 2rem;
+  background: transparent;
+  color: #eeeeee;
+  font-weight: bolder;
+  font-size: x-large;
+  text-decoration: none;
+  border: 2px solid #c0a062;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.appointment:hover {
+  background-color: #c0a062;
+  color: #1a1a1a;
+  cursor: pointer;
 }
 
 /* Responsive tweaks */
@@ -68,5 +77,12 @@
   .ctaButton {
     padding: 0.6rem 1.2rem;
     font-size: 0.9rem;
+  }
+
+  .appointment {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    width: 100%;
+    max-width: 300px;
   }
 }

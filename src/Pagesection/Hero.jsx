@@ -1,5 +1,6 @@
 import React from "react";
 import Style from "../Css/Hero.module.css";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -13,6 +14,11 @@ const Hero = () => {
           precision cuts, flawless fades, and luxury grooming meet unmatched
           service. Your transformation starts here.
         </p>
+        <div className={Style.ctaButton}>
+          <Link to="/Appointment" className={Style.appointment}>
+            BOOK APPOINTMENT
+          </Link>
+        </div>
       </div>
     </main>
   );
