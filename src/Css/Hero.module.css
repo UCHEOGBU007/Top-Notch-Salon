@@ -1,0 +1,62 @@
+.Hero {
+  background-color: #000;
+  color: #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 500px;
+  padding: 1rem;
+}
+
+.Hero div {
+  max-width: 600px;
+  /* padding: 1rem; */
+}
+
+.Hero h2 {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.Hero span {
+  color: #c0a062;
+}
+
+.Hero p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.ctaButton {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #c0a062;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.ctaButton:hover {
+  background-color: #d4b378;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .Hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .Hero p {
+    font-size: 0.95rem;
+  }
+
+  .ctaButton {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
