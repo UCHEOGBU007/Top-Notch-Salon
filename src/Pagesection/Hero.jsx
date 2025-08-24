@@ -6,12 +6,12 @@ const Hero = () => {
     <main className={Style.Hero}>
       <div>
         <h2>
-          LOOK SHARP & <span>FEEL CONFIDENT</span>
+          LOOK SHARP <span> & FEEL CONFIDENT</span>
         </h2>
         <p>
-          Step into style at Top-Notch Barbers & Salon—where precision cuts,
-          flawless fades, and luxury grooming meet unmatched service. Your
-          transformation starts here.
+          Step into style at <span>Top-Notch Barbers & Salon —</span> where
+          precision cuts, flawless fades, and luxury grooming meet unmatched
+          service. Your transformation starts here.
         </p>
       </div>
     </main>

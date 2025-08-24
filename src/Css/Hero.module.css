@@ -1,5 +1,8 @@
 .Hero {
-  background-color: #000;
+  background-image: url("/Heropicture.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #eeeeee;
   display: flex;
   justify-content: center;
@@ -10,13 +13,16 @@
 }
 
 .Hero div {
-  max-width: 600px;
+  max-width: 800px;
   /* padding: 1rem; */
 }
 
 .Hero h2 {
-  font-size: 2rem;
+  font-size: 3rem;
+  font-family: "cursive, Courier New", Courier, monospace;
   line-height: 1.2;
+  font-weight: 2rem;
+  background: transparent;
 }
 
 .Hero span {
@@ -25,8 +31,10 @@
 
 .Hero p {
   margin-top: 1rem;
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.6;
+  background: transparent;
+  font-weight: 900;
 }
 
 .ctaButton {
@@ -48,7 +56,7 @@
 /* Responsive tweaks */
 @media (max-width: 600px) {
   .Hero h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .Hero p {
