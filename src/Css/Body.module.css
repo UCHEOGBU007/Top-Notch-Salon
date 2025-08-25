@@ -1,0 +1,89 @@
+.bodyparent {
+  background: rgb(30, 30, 30);
+  color: #eee;
+  padding: 2rem 1rem;
+}
+
+/* Container styling */
+.bodycontainer {
+  text-align: center;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Heading styling */
+.bodycontainer h2 {
+  font-size: 2.5rem;
+  margin-top: 20px;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.bodycontainer h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #faaa16;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+  margin-top: 20px;
+}
+
+/* Brand highlight */
+.bodycontainer span {
+  color: #faaa16;
+  font-weight: bold;
+  position: relative;
+}
+
+/* .bodycontainer span::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #c0a062;
+  margin: 0.3rem auto 0;
+  border-radius: 1px;
+} */
+
+/* Paragraph styling */
+.bodycontainer p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #eee;
+  opacity: 0.7;
+  font-style: italic;
+  margin: 0 1rem;
+}
+
+/* 🌐 Responsive tweaks */
+@media (max-width: 768px) {
+  .bodycontainer {
+    padding: 1.5rem;
+  }
+
+  .bodycontainer h2 {
+    font-size: 2rem;
+  }
+
+  .bodycontainer p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .bodycontainer {
+    padding: 1rem;
+  }
+
+  .bodycontainer h2 {
+    font-size: 1.6rem;
+  }
+
+  .bodycontainer p {
+    font-size: 0.95rem;
+  }
+}
