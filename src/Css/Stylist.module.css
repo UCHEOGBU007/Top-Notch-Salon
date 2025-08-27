@@ -1,0 +1,126 @@
+.container {
+  padding: 2rem;
+  text-align: center;
+  background-color: black;
+}
+
+.subheading {
+  font-size: 2rem;
+  color: #be8211;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.subheading::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #eeee;
+  margin-top: 10px;
+  margin-left: 38%;
+}
+
+.heading {
+  font-size: 1rem;
+  color: #eeee;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.8;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-top: 50px;
+}
+
+.card {
+  background-color: #2a2a2a;
+  transition: transform 0.3s ease;
+  max-width: 300px;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.card h4 {
+  /* color: #eeeeeeee; */
+  color: #be8211;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.card p {
+  color: #eee;
+  margin-top: 5px;
+  margin-bottom: 3px;
+  opacity: 0.7;
+  font-weight: 400;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.name {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #eeee;
+}
+
+.bio {
+  font-size: 0.9rem;
+  color: #eeee;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card {
+    padding: 0.75rem;
+    max-width: 90%;
+  }
+
+  .image {
+    height: 180px;
+  }
+
+  .name {
+    font-size: 1rem;
+  }
+
+  .bio {
+    font-size: 0.85rem;
+  }
+}
+
+/* responsive adjustment for smaller screen  */
+
+@media (max-width: 480px) {
+  .card {
+    padding: 0.5rem;
+    max-width: 100%;
+  }
+
+  .image {
+    height: 150px;
+  }
+
+  .name {
+    font-size: 0.95rem;
+  }
+
+  .bio {
+    font-size: 0.8rem;
+  }
+}

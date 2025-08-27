@@ -47,18 +47,15 @@
   transform: translateY(-5px);
 }
 
-.card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 8px;
-  background-color: #444;
+.icon {
+  color: #c0a062;
+  font-size: 2rem;
 }
 
 .card h3 {
   margin-top: 1rem;
   font-size: 1.4rem;
-  color: #c0a062;
+  color: #eeee;
 }
 
 .card p {
