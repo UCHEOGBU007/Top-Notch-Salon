@@ -3,6 +3,7 @@ import supabase from "../config/SupabaseClient.jsx";
 import Hero from "../Pagesection/Hero.jsx";
 import Body from "../Pagesection/Body.jsx";
 import Ourservices from "../Pagesection/Ourservices.jsx";
+import Testimonials from "../Pagesection/Testimonials";
 
 const Home = () => {
   console.log(supabase);
@@ -11,6 +12,7 @@ const Home = () => {
       <Hero />
       <Body />
       <Ourservices />
+      <Testimonials />
     </div>
   );
 };

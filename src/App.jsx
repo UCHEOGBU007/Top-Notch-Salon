@@ -6,6 +6,7 @@ import Contact from "./Components/Contact.jsx";
 import Appointment from "./Components/Appointment.jsx";
 import Navigation from "./Components/Navigation.jsx";
 import Footer from "./Components/Footer.jsx";
+import ScrollToTop from "./Components/ScrollToTop.jsx";
 import "./App.css";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <BrowserRouter>
         <Navigation />
         <hr />
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
