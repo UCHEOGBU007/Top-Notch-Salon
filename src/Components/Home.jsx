@@ -6,7 +6,6 @@ import Ourservices from "../Pagesection/Ourservices.jsx";
 import Testimonials from "../Pagesection/Testimonials";
 
 const Home = () => {
-  console.log(supabase);
   return (
     <div>
       <Hero />
