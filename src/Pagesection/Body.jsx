@@ -1,5 +1,6 @@
 import React from "react";
 import Style from "../Css/Body.module.Css";
+import Stylist from "./Stylist";
 
 const Body = () => {
   return (
@@ -16,6 +17,8 @@ const Body = () => {
           stylist and you will never be disappointed.
         </p>
       </section>
+      <hr />
+      <Stylist />
     </div>
   );
 };
