@@ -1,5 +1,5 @@
 import React from "react";
-import Style from "./Css/Body.module.css";
+import Style from "../Css/Body.module.css";
 import Stylist from "./Stylist";
 
 const Body = () => {
