@@ -23,7 +23,6 @@ function App() {
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Appointment" element={<Appointment />} />
         </Routes>
-        <br />
         <Footer />
       </BrowserRouter>
     </>

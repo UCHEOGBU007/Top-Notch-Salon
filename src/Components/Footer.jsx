@@ -6,6 +6,11 @@ import { IoLogoInstagram } from "react-icons/io";
 import { FaTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { SiMinutemailer } from "react-icons/si";
+import { CiHome } from "react-icons/ci";
+import { CiCalendarDate } from "react-icons/ci";
+import { MdOutlineRoundaboutLeft } from "react-icons/md";
+import { GrGallery } from "react-icons/gr";
+import { FcGallery } from "react-icons/fc";
 
 const Footer = () => {
   return (
@@ -20,27 +25,23 @@ const Footer = () => {
           <ul>
             <li>
               <Link to="/" className={Style.link}>
-                HOME
+                <CiHome /> HOME
               </Link>
             </li>
             <li>
               <Link to="/About" className={Style.link}>
-                ABOUT
+                <MdOutlineRoundaboutLeft /> ABOUT
               </Link>
             </li>
-            <li>
-              <Link to="/Services" className={Style.link}>
-                SERVICES
-              </Link>
-            </li>
+
             <li>
               <Link to="/Gallery" className={Style.link}>
-                GALLERY
+                <FcGallery /> GALLERY
               </Link>
             </li>
             <li>
               <Link to="/Appointment" className={Style.link}>
-                APPOINTMENT
+                <CiCalendarDate /> APPOINTMENT
               </Link>
             </li>
           </ul>
