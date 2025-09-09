@@ -1,0 +1,57 @@
+.TestimonyContainer {
+  /* background: #495e57; */
+  background-image: url("/src/assets/Testimoniebackground1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+
+  padding: 2em;
+}
+
+.TestimonyContainer h3 {
+  color: #faaa16;
+  font-size: 1.5em;
+  text-align: center;
+  align-items: center;
+}
+
+.TestimonyContainer > p {
+  color: #d3cfcf;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.Testimonycard {
+  background-color: #ffffff;
+  border-radius: 10px;
+  height: fit-content;
+  margin-top: 3em;
+  max-width: 320px;
+  padding: 20px;
+  text-align: left;
+}
+
+.Testimonycard h5 {
+  padding: 10px;
+}
+
+.Testimonycard img {
+  width: 6.5rem;
+  height: 7.125rem;
+  border-radius: 50%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.Testimonycard span {
+  color: #c6a70d;
+  margin-top: 50px;
+  margin-right: 10px;
+  float: right;
+}
+
+.Testimonycard p {
+  color: gray;
+  font-size: 16px;
+}

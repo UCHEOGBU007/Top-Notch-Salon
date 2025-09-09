@@ -4,7 +4,6 @@ import { FaPaintbrush } from "react-icons/fa6";
 import { PiHairDryer } from "react-icons/pi";
 import { GiRazor } from "react-icons/gi";
 import { TbRazorElectric } from "react-icons/tb";
-import Stylist from "./Stylist";
 
 const Ourservices = () => {
   const services = [
@@ -46,7 +45,6 @@ const Ourservices = () => {
         </div>
       </section>
       <hr />
-      <Stylist />
     </>
   );
 };
