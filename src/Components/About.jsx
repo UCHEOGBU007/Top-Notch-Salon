@@ -24,7 +24,8 @@ const About = () => {
           reflection of personality. That’s why we’ve created a space that’s not
           only professional but also warm and welcoming. Whether you’re here for
           a quick trim or a full grooming experience, you’ll be treated with
-          care, respect, and attention to detail. Our team is made up of
+          care, respect, and attention to detail.{" "}
+          {/*Our team is made up of
           experienced barbers who stay ahead of the curve with ongoing training
           and a deep love for the culture of grooming. We use top-tier tools and
           products to ensure every client leaves with a sharp look and a smile.
@@ -35,7 +36,7 @@ const About = () => {
           and styles. Whether you’re a longtime regular or a first-time visitor,
           we’re here to make your grooming experience exceptional. Step into
           Topnotch Barbing Saloon and discover why we’re more than just a
-          barbershop—we’re a cut above the rest.
+          barbershop—we’re a cut above the rest. */}
         </p>
       </section>
       <Testimonials />

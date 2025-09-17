@@ -1,0 +1,65 @@
+/* Main container */
+.container section {
+  text-align: center;
+  background-color: #222;
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* Heading */
+.container h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #faaa16;
+  margin-bottom: 2rem;
+}
+
+/* Section article layout */
+section article {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns on large screens */
+  align-items: center;
+  justify-content: center;
+}
+
+/* Image styling for large screens */
+.container img {
+  width: 700px;
+  height: 900px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  /* object-fit: cover; */
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+.container .img2 {
+  border: none;
+  border-radius: 90% 0% 0% 85%;
+  margin-left: 2.6em;
+}
+
+.container img:hover {
+  transform: scale(1.02);
+}
+
+/* Responsive layout: single column on small screens */
+@media (max-width: 768px) {
+  section article {
+    grid-template-columns: 1fr; /* Stack in one column */
+    gap: 1.5rem;
+  }
+
+  .container img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    border-radius: 8px;
+    object-fit: contain;
+  }
+
+  .container h2 {
+    font-size: 2rem;
+  }
+}
