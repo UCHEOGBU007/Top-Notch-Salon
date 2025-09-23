@@ -35,11 +35,6 @@ const Footer = () => {
             </li>
 
             <li>
-              <Link to="/Gallery" className={Style.link}>
-                <FcGallery /> GALLERY
-              </Link>
-            </li>
-            <li>
               <Link to="/Appointment" className={Style.link}>
                 <CiCalendarDate /> APPOINTMENT
               </Link>
