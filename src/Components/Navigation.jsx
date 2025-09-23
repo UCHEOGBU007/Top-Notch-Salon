@@ -42,17 +42,8 @@ const Navigation = () => {
               SERVICES
             </Link>
           </li>
-
-          <li>
-            <Link
-              to="/Gallery"
-              className={Styles.link}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              GALLERY
-            </Link>
-          </li>
         </ul>
+
         <Link
           to="/Appointment"
           className={Styles.order}
