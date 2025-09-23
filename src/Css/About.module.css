@@ -11,7 +11,7 @@ main {
 main h2 {
   text-align: center;
   padding-top: 200px;
-  color: #eeeeee;
+  color: #faaa16;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 3rem;
   text-transform: uppercase;
@@ -47,7 +47,7 @@ main h2 {
 }
 
 .body p b {
-  color: #faaa16;
+  color: #eee;
   font-size: xx-large;
 }
 
