@@ -5,12 +5,12 @@ import { FaFacebookF } from "react-icons/fa6";
 import { IoLogoInstagram } from "react-icons/io";
 import { FaTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
+import { FaWhatsapp } from "react-icons/fa6";
+
 import { SiMinutemailer } from "react-icons/si";
 import { CiHome } from "react-icons/ci";
 import { CiCalendarDate } from "react-icons/ci";
 import { MdOutlineRoundaboutLeft } from "react-icons/md";
-import { GrGallery } from "react-icons/gr";
-import { FcGallery } from "react-icons/fc";
 
 const Footer = () => {
   return (
@@ -47,7 +47,41 @@ const Footer = () => {
           <a href="tel:+1234567890">📞 +123-456-7890</a>
           {/* <a href="mailto:info@yourdomain.com">📧 Email Us</a> */}
           <div className={Style.mediaicons}>
-            <FaFacebookF /> <IoLogoInstagram /> <FaLinkedinIn /> <FaTwitter />
+            <a
+              href="https://facebook.com/yourpage"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebookF />
+            </a>
+            <a
+              href="https://instagram.com/yourprofile"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <IoLogoInstagram />
+            </a>
+            <a
+              href="https://linkedin.com/in/yourprofile"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedinIn />
+            </a>
+            <a
+              href="https://twitter.com/yourhandle"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaTwitter />
+            </a>
+            <a
+              href="https://wa.me/yourwhatsapplink"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaWhatsapp />
+            </a>
           </div>
           <h5 className={Style.subscribeh5}>Subscribe News Letter:</h5>
 

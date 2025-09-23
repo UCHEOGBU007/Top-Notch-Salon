@@ -111,34 +111,62 @@
 
 /* Social media icons */
 
-.mediaicons svg {
-  width: 30px;
-  height: 30px;
-  margin-top: 15px;
-  padding: 8px;
-  border-radius: 50%;
-  color: white;
-  transition: transform 0.3s ease;
+.mediaicons {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+  margin-left: 50px;
+  flex-wrap: wrap;
 }
 
-.mediaicons svg:hover {
-  transform: scale(1.1);
+/* Anchor wrapper for each icon */
+.mediaicons a {
+  display: inline-block;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Base icon styling */
+.mediaicons a svg {
+  width: 35px;
+  height: 35px;
+  padding: 8px;
+  color: white;
+  border-radius: 50%;
+}
+
+/* Hover effect for all icons */
+.mediaicons a:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
   cursor: pointer;
 }
 
 /* Specific brand colors */
-.mediaicons svg:nth-child(1) {
-  background-color: #1877f2;
-} /* Facebook */
-.mediaicons svg:nth-child(2) {
-  background-color: #e4405f;
-} /* Instagram */
-.mediaicons svg:nth-child(3) {
-  background-color: #0a66c2;
-} /* LinkedIn */
-.mediaicons svg:nth-child(4) {
-  background-color: #1da1f2;
-} /* Twitter */
+.mediaicons a:nth-child(1) svg {
+  background-color: #1877f2; /* Facebook */
+}
+.mediaicons a:nth-child(2) svg {
+  background-color: #e4405f; /* Instagram */
+}
+.mediaicons a:nth-child(3) svg {
+  background-color: #0a66c2; /* LinkedIn */
+}
+.mediaicons a:nth-child(4) svg {
+  background-color: #1da1f2; /* Twitter */
+}
+.mediaicons a:nth-child(5) svg {
+  background-color: #25d366; /* WhatsApp */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .mediaicons {
+    justify-content: center;
+    margin-top: 15px;
+    margin-left: 0;
+  }
+}
 
 /* Responsive: Stack inputs on smaller screens for news letter */
 @media (max-width: 768px) {
