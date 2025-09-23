@@ -1,0 +1,189 @@
+section {
+  background-color: black;
+  padding-bottom: 3em;
+}
+
+.header img {
+  width: 100%;
+  background-color: transparent;
+  height: 500px;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container h4 {
+  justify-items: center;
+  text-align: center;
+
+  font-size: 3em;
+  padding-top: 1em;
+  color: #faaa16;
+}
+.illustrationcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.illustrationcard img {
+  background-color: black;
+  width: 400px;
+  border: none;
+  height: 100%;
+  transform: scaleX(-1);
+  animation: floatY 2s ease-in-out infinite;
+}
+
+/*Styling Animation for the form illustration*/
+
+@keyframes floatY {
+  0% {
+    transform: scaleX(-1) translateY(0);
+  }
+  50% {
+    transform: scaleX(-1) translateY(-10px);
+  }
+  100% {
+    transform: scaleX(-1) translateY(0);
+  }
+}
+
+.container form {
+  margin: 0 auto;
+  width: 50em;
+  margin-top: 4em;
+}
+
+.container form fieldset {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  border: solid;
+  border-color: #865d11 #faaa16;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.container form fieldset legend {
+  font-size: 2em;
+  /* color: #faaa16; */
+  font-weight: bolder;
+  color: #eee;
+}
+
+.container form fieldset label {
+  font-weight: bolder;
+  /* color: #eee; */
+  color: #faaa16;
+  padding: 0.5em 0 0.5em 0;
+}
+
+.container form fieldset input {
+  padding: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.container form select {
+  padding: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.container form select option {
+  cursor: pointer;
+  color: #495e57;
+  background-color: rgb(193, 190, 190);
+  font-weight: 600;
+}
+
+.container form select option:nth-child(1) {
+  background-color: #faaa16;
+  opacity: 0.6;
+}
+
+.container form button {
+  color: #495e57;
+  width: 100%;
+  margin-top: 8px;
+  padding: 10px 30px 10px 30px;
+  border-color: #faaa16;
+  border-radius: 5px;
+  font-size: larger;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.container form button:hover {
+  background-color: #495e57;
+  color: #faaa16;
+}
+
+/* Responsive design starts here */
+
+@media (max-width: 890px) {
+  .header img {
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .container h4 {
+    font-size: 2em;
+    padding: 0.5em;
+  }
+
+  .container form {
+    width: 90%;
+    margin: 2em auto;
+  }
+
+  .container form fieldset {
+    padding: 15px;
+  }
+
+  .container form fieldset legend {
+    font-size: 1.5em;
+  }
+
+  .container form fieldset label {
+    font-size: 0.95rem;
+    margin-top: 10px;
+  }
+
+  .container form fieldset input,
+  .container form select {
+    padding: 8px;
+    font-size: 0.95rem;
+  }
+
+  .container form button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .radiobox {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+  }
+
+  .radiobox label {
+    margin: 5px 0;
+    font-size: 0.95rem;
+  }
+
+  .radiobox input[type="radio"] {
+    transform: scale(1.2);
+  }
+  .illustrationcontainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .illustrationcard img {
+    padding-top: 70px;
+  }
+}

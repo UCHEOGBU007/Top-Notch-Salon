@@ -6,6 +6,7 @@
 
 /* Container styling */
 .bodycontainer {
+  background: rgb(30, 30, 30);
   text-align: center;
   padding: 2rem;
   max-width: 800px;
