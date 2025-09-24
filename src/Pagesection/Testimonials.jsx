@@ -39,8 +39,8 @@ const Testimonies = () => {
         autoPlay={true}
         autoPlaySpeed={2500}
         keyBoardControl={true}
-        removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
         partialVisible={true}
+        showDots={true}
         responsive={responsive}
       >
         {/* Testimony cards starts here . */}

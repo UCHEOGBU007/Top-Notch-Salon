@@ -6,6 +6,8 @@ import { GiRazor } from "react-icons/gi";
 import { TbRazorElectric } from "react-icons/tb";
 
 const Ourservices = () => {
+  // Array of services with icons, titles, and descriptions
+
   const services = [
     {
       icon: <GiRazor />,
@@ -35,6 +37,8 @@ const Ourservices = () => {
       <section className={Style.container}>
         <h2 className={Style.heading}>Our Services</h2>
         <div className={Style.grid}>
+          {/* Mapping through the services array to create service cards */}
+
           {services.map((service, index) => (
             <div className={Style.card} key={index}>
               <div className={Style.icon}>{service.icon}</div>

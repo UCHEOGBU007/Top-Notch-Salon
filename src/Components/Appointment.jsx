@@ -4,6 +4,8 @@ import Style from "../Css/Reservation.module.css";
 import Testimonials from "../Pagesection/Testimonials.jsx";
 
 const Reservation = () => {
+  // State to manage form inputs
+
   const [reservation, setReservation] = useState({
     name: "",
     date: "",
@@ -37,7 +39,7 @@ const Reservation = () => {
     // supase APi call function
 
     const { data, error } = await supabase
-      .from("top_notch_reservations") // ✅ Updated table name
+      .from("top_notch_reservations") //  table name
       .insert([reservation]);
 
     // Checking for api request if it turns out error
