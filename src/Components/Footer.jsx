@@ -55,7 +55,7 @@ const Footer = () => {
               <FaFacebookF />
             </a>
             <a
-              href="https://instagram.com/yourprofile"
+              href="https://www.instagram.com/top_notchbarbers_?igsh=bml6cDVhN3M5NXNl&utm_source=qr"
               target="_blank"
               rel="noopener noreferrer"
             >
