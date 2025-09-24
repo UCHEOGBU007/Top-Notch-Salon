@@ -21,20 +21,31 @@ const Reservation = () => {
 
     const { name, date, guests, occasion, email, phone, time } = reservation;
 
-    if (!name || !date || !guests || !occasion || !email || !phone || !time) {
+    if (
+      name === "" ||
+      date === "" ||
+      guests === "" ||
+      occasion === "" ||
+      email === "" ||
+      phone === "" ||
+      time === ""
+    ) {
       setFormError("Please fill in all required fields.");
       return;
     }
+
+    // supase APi call function
 
     const { data, error } = await supabase
       .from("top_notch_reservations") // ✅ Updated table name
       .insert([reservation]);
 
+    // Checking for api request if it turns out error
+
     if (error) {
       setFormError(
         "An error occurred while submitting the form. Please try again."
       );
-      console.error("Error inserting data:", error);
     } else {
       setFormError(null);
       alert("Reservation successful!");
@@ -47,7 +58,6 @@ const Reservation = () => {
         phone: "",
         time: "",
       });
-      console.log("Data inserted successfully:", data);
     }
   };
 
