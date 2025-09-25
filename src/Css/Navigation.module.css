@@ -15,11 +15,11 @@
   justify-content: space-between;
   color: #eeeeee;
   padding: 0.5rem;
-  /* opacity: 1; */
+  opacity: 1;
 }
 
 .logo img {
-  height: fit-content;
+  height: auto;
   width: 100px;
   font-size: 2em;
   /* margin-top: 20px; */
