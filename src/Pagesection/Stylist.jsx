@@ -49,6 +49,7 @@ const Stylist = () => {
                 src={stylist.img}
                 alt={stylist.name}
                 className={Style.image}
+                loading="lazy"
               />
               <h4>{stylist.name}</h4>
               <p>{stylist.bio}</p>

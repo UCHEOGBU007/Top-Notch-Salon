@@ -11,7 +11,7 @@ const Navigation = () => {
     <header className={Styles.header}>
       <nav className={Styles.nav}>
         <div className={Styles.logo}>
-          <img src="/Logo.jpg" alt="Little Lemon Logo" />
+          <img src="/Logo.jpg" alt="Little Lemon Logo" loading="lazy" />
         </div>
 
         <ul className={`${Styles.menu} ${isMenuOpen ? Styles.show : ""}`}>

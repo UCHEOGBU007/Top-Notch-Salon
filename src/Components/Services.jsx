@@ -13,8 +13,13 @@ const Services = () => {
             className={Style.img2}
             src="/Pricelistillustration.jpg"
             alt="list aside "
+            loading="lazy"
           />
-          <img src="/Barbing price list.jpg" alt="price list image" />
+          <img
+            src="/Barbing price list.jpg"
+            alt="price list image"
+            loading="lazy"
+          />
         </article>
       </section>
     </div>

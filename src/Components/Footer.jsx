@@ -17,7 +17,12 @@ const Footer = () => {
     <>
       <footer className={Style.footercontainer}>
         <div>
-          <img src="/Logo.jpg" alt="Logo" className={Style.logo} />
+          <img
+            src="/Logo.jpg"
+            alt="Logo"
+            className={Style.logo}
+            loading="lazy"
+          />
         </div>
 
         <nav className={Style.section}>

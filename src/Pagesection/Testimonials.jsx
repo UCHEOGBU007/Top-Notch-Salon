@@ -48,7 +48,7 @@ const Testimonies = () => {
         <div className={Style.Testimonycard}>
           <h5>Helieth Holibony</h5>
           <div>
-            <img src="/Helieth.jpg" alt="Testimonies picture" />
+            <img src="/Helieth.jpg" alt="Testimonies picture" loading="lazy" />
             <span>
               <IoMdStarOutline />
               <IoMdStarOutline />
@@ -66,7 +66,7 @@ const Testimonies = () => {
         <div className={Style.Testimonycard}>
           <h5>Don San</h5>
           <div>
-            <img src="/Donsan.jpg" alt="Testimonies picture" />
+            <img src="/Donsan.jpg" alt="Testimonies picture" loading="lazy" />
             <span>
               <IoMdStarOutline />
               <IoMdStarOutline />
@@ -83,7 +83,11 @@ const Testimonies = () => {
         <div className={Style.Testimonycard}>
           <h5>Dancefit Lee</h5>
           <div>
-            <img src="/Dancefitlee.jpg" alt="Testimonies picture" />
+            <img
+              src="/Dancefitlee.jpg"
+              alt="Testimonies picture"
+              loading="lazy"
+            />
             <span>
               <IoMdStarOutline />
               <IoMdStarOutline />
@@ -102,7 +106,7 @@ const Testimonies = () => {
         <div className={Style.Testimonycard}>
           <h5>Norma Yunita</h5>
           <div>
-            <img src="/Norma.jpg" alt="Testimonies picture" />
+            <img src="/Norma.jpg" alt="Testimonies picture" loading="lazy" />
             <span>
               <IoMdStarOutline />
               <IoMdStarOutline />
@@ -121,7 +125,7 @@ const Testimonies = () => {
         <div className={Style.Testimonycard}>
           <h5>Jay</h5>
           <div>
-            <img src="/Jay.jpg" alt="Testimonies picture" />
+            <img src="/Jay.jpg" alt="Testimonies picture" loading="lazy" />
             <span>
               <IoMdStarOutline />
               <IoMdStarOutline />
@@ -140,7 +144,11 @@ const Testimonies = () => {
         <div className={Style.Testimonycard}>
           <h5>Tiangay Koker</h5>
           <div>
-            <img src="/Tiangaykoker.jpg" alt="Testimonies picture" />
+            <img
+              src="/Tiangaykoker.jpg"
+              alt="Testimonies picture"
+              loading="lazy"
+            />
             <span>
               <IoMdStarOutline />
               <IoMdStarOutline />
@@ -160,7 +168,7 @@ const Testimonies = () => {
         <div className={Style.Testimonycard}>
           <h5>Kelvin</h5>
           <div>
-            <img src="/Kelvin.jpg" alt="Testimonies picture" />
+            <img src="/Kelvin.jpg" alt="Testimonies picture" loading="lazy" />
             <span>
               <IoMdStarOutline />
               <IoMdStarOutline />
@@ -180,7 +188,11 @@ const Testimonies = () => {
         <div className={Style.Testimonycard}>
           <h5>Bongo Square</h5>
           <div>
-            <img src="/Bongosquare.jpg" alt="Testimonies picture" />
+            <img
+              src="/Bongosquare.jpg"
+              alt="Testimonies picture"
+              loading="lazy"
+            />
             <span>
               <IoMdStarOutline />
               <IoMdStarOutline />

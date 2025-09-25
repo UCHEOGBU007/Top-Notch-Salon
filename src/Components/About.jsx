@@ -9,7 +9,7 @@ const About = () => {
         <h2> / ABOUT-US </h2>
       </main>
       <section className={Style.body}>
-        <img src="/ABOUTBODY.jpg" alt="Barbing illustration" />
+        <img src="/ABOUTBODY.jpg" alt="Barbing illustration" loading="lazy" />
 
         <p>
           <b>ABOUT US - </b>
