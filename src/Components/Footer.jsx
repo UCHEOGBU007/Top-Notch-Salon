@@ -24,8 +24,9 @@ const Footer = () => {
             loading="lazy"
           />
           <p>
-            Welcome to Topnotch Barbing Saloon, where style meets precision and
-            every cut tells a story.
+            Welcome to{" "}
+            <b style={{ color: "#be8211" }}>Topnotch Barbing Saloon</b>, where
+            style meets precision and every cut tells a story.
           </p>
           {/* Social Media Icons */}
 
@@ -105,29 +106,17 @@ const Footer = () => {
         <address>
           <h5>CONTACTS:</h5>
           <a href="tel:+6282221896489" aria-label="Call +62 822-2189-6489">
-            📞+62 822-2189-6489
+            📞+62 822-2189-6489.
           </a>
           <a href="mailto:Topnotchofficial001@gmail.com?subject=Booking Inquiry&body=Hi, I’d like to book an appointment...">
-            📧 Topnotchofficial001@gmail.com
+            📧 Topnotchofficial001@gmail.com.
           </a>
+          <p>
+            Business Hours: <b>10:00 AM - 10:00 PM</b> Mon-Sat, <b>Closed</b>{" "}
+            Sun.
+          </p>
 
-          <p>No. 350 Jalan Legian Kuta Badung, Bali, Indonesia</p>
-
-          {/* <a href="mailto:info@yourdomain.com">📧 Email Us</a> */}
-
-          {/* <h5 className={Style.subscribeh5}>NewsLetter:</h5> */}
-
-          {/* <form className={Style.newsletterForm} action="" method="post">
-            <input
-              type="email"
-              placeholder="Subscribe to our Newsletter"
-              required
-              className={Style.emailInput}
-            />
-            <button type="submit" className={Style.submitButton}>
-              Subscribe <SiMinutemailer />
-            </button>
-          </form> */}
+          <p>No. 350 Jalan Legian Kuta Badung, Bali, Indonesia.</p>
         </address>
       </footer>
 
