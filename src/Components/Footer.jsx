@@ -16,41 +16,19 @@ const Footer = () => {
   return (
     <>
       <footer className={Style.footercontainer}>
-        <div>
+        <div className={Style.logoContainer}>
           <img
             src="/Logo.jpg"
             alt="Logo"
             className={Style.logo}
             loading="lazy"
           />
-        </div>
+          <p>
+            Welcome to Topnotch Barbing Saloon, where style meets precision and
+            every cut tells a story.
+          </p>
+          {/* Social Media Icons */}
 
-        <nav className={Style.section}>
-          <h5>NAVIGATION:</h5>
-          <ul>
-            <li>
-              <Link to="/" className={Style.link}>
-                <CiHome /> HOME
-              </Link>
-            </li>
-            <li>
-              <Link to="/About" className={Style.link}>
-                <MdOutlineRoundaboutLeft /> ABOUT
-              </Link>
-            </li>
-
-            <li>
-              <Link to="/Appointment" className={Style.link}>
-                <CiCalendarDate /> APPOINTMENT
-              </Link>
-            </li>
-          </ul>
-        </nav>
-
-        <address className={Style.section}>
-          <h5>CONTACTS:</h5>
-          <a href="tel:+1234567890">📞 +123-456-7890</a>
-          {/* <a href="mailto:info@yourdomain.com">📧 Email Us</a> */}
           <div className={Style.mediaicons}>
             <a
               href="https://facebook.com/yourpage"
@@ -88,12 +66,11 @@ const Footer = () => {
               <FaWhatsapp />
             </a>
           </div>
-          <h5 className={Style.subscribeh5}>Subscribe News Letter:</h5>
-
+          <h5 className={Style.subscribeh5}>NewsLetter:</h5>
           <form className={Style.newsletterForm} action="" method="post">
             <input
               type="email"
-              placeholder="Enter your email"
+              placeholder="Subscribe to our Newsletter"
               required
               className={Style.emailInput}
             />
@@ -101,6 +78,56 @@ const Footer = () => {
               Subscribe <SiMinutemailer />
             </button>
           </form>
+        </div>
+
+        <nav className={Style.section}>
+          <h5>NAVIGATION:</h5>
+          <ul>
+            <li>
+              <Link to="/" className={Style.link}>
+                <CiHome /> HOME
+              </Link>
+            </li>
+            <li>
+              <Link to="/About" className={Style.link}>
+                <MdOutlineRoundaboutLeft /> ABOUT
+              </Link>
+            </li>
+
+            <li>
+              <Link to="/Appointment" className={Style.link}>
+                <CiCalendarDate /> APPOINTMENT
+              </Link>
+            </li>
+          </ul>
+        </nav>
+
+        <address>
+          <h5>CONTACTS:</h5>
+          <a href="tel:+6282221896489" aria-label="Call +62 822-2189-6489">
+            📞+62 822-2189-6489
+          </a>
+          <a href="mailto:Topnotchofficial001@gmail.com?subject=Booking Inquiry&body=Hi, I’d like to book an appointment...">
+            📧 Topnotchofficial001@gmail.com
+          </a>
+
+          <p>No. 350 Jalan Legian Kuta Badung, Bali, Indonesia</p>
+
+          {/* <a href="mailto:info@yourdomain.com">📧 Email Us</a> */}
+
+          {/* <h5 className={Style.subscribeh5}>NewsLetter:</h5> */}
+
+          {/* <form className={Style.newsletterForm} action="" method="post">
+            <input
+              type="email"
+              placeholder="Subscribe to our Newsletter"
+              required
+              className={Style.emailInput}
+            />
+            <button type="submit" className={Style.submitButton}>
+              Subscribe <SiMinutemailer />
+            </button>
+          </form> */}
         </address>
       </footer>
 

@@ -1,132 +1,182 @@
+/* === Footer Container === */
 .footercontainer {
-  height: 260px;
-  background-color: black;
-  /* color: #eeeeee; */
-  color: #eeeeeee6;
   display: flex;
-  text-align: center;
+  flex-wrap: wrap;
   justify-content: space-between;
-  padding: 3em;
+  align-items: flex-start;
+  background-color: black;
+  color: #eeeeeee6;
+  padding: 2rem;
+  gap: 2rem;
+  box-sizing: border-box;
+  text-align: left;
 }
 
-.footercontainer img {
-  height: 190px;
-  width: 180px;
+/* === Logo Section === */
+.logoContainer {
+  flex: 1 1 300px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.logoContainer img {
+  width: 140px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.logoContainer img:hover {
+  transform: scale(1.05);
+}
+
+.logoContainer p {
+  font-size: 1rem;
+  line-height: 1.6;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+  word-break: break-word;
+}
+
+/* === Navigation Section === */
+.section {
+  flex: 1 1 200px;
+  margin-top: 3em;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
 }
 
 .section h5 {
-  font-size: larger;
-  font-weight: bolder;
-  /* color: #333333; */
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
 .section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
-  padding: 10px;
-  margin: 10px;
+  gap: 0.5rem;
+}
+
+.section ul li {
+  margin: 0;
 }
 
 .link {
   text-decoration: none;
   color: #eeeeeee6;
-  margin-left: 5px;
-  padding: 5px;
   opacity: 0.7;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0;
 }
 
 .link:hover {
   text-decoration: underline;
-  text-decoration-color: #be8211; /* Little Lemon's accent color */
+  text-decoration-color: #be8211;
   text-decoration-thickness: 2px;
   color: #be8211;
 }
 
-/*Footer contacts Styling starts here */
-
+/* === Contact Section === */
 .footercontainer address {
+  margin-top: 3em;
+  flex: 1 1 200px;
+  max-width: 300px;
   display: flex;
   flex-direction: column;
 }
 
+.footercontainer address h5 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.footercontainer address p {
+  margin: 0.25rem 0;
+  line-height: 1.5;
+}
+
+.footercontainer address a {
+  margin-top: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #eeeeeee6;
+}
+
+.footercontainer address a:hover {
+  color: #faaa16;
+  background: #333;
+  border-radius: 5px;
+  padding: 0.25rem;
+}
+
+/* === Newsletter Form === */
 .subscribeh5 {
-  margin: 10px;
+  margin: 1rem 0 0.5rem;
 }
 
 .newsletterForm {
   display: flex;
-  margin-top: 0.5em;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1em;
 }
 
-/* Email Input */
 .emailInput {
-  flex: 1;
+  flex: 1 1 auto;
   padding: 0.55rem 0.5rem;
   font-size: 1rem;
   border: none;
-  border-radius: 4px 0 0 4px;
+  border-radius: 4px;
   outline: none;
+  min-width: 200px;
 }
 
-/* Submit Button */
 .submitButton {
   background-color: #be8211;
   color: #fff;
   border: none;
-  padding: 0 0.5rem;
+  padding: 0.55rem 1rem;
   font-size: 1rem;
+  border-radius: 4px;
   cursor: pointer;
-  border-radius: 0 4px 4px 0;
   transition: background-color 0.2s ease;
-  cursor: pointer;
 }
 
 .submitButton:hover {
   background-color: #e59412;
 }
 
-.footercontainer address a {
-  margin-top: 15px;
-  font-weight: bolder;
-  /* color: #495e57; */
-  text-decoration: none;
-}
-
-.footercontainer address a:hover {
-  color: #faaa16;
-  background: #333333;
-  border-radius: 5px;
-}
-
-.copyright {
-  background: rgb(30, 30, 30);
-  color: #faaa16;
-  font-size: 1.1em;
-  font-weight: bold;
-  text-align: center;
-  justify-items: center;
-  height: 60px;
-  padding-top: 20px;
-}
-
-/* Social media icons */
-
+/* === Social Media Icons === */
 .mediaicons {
   display: flex;
   gap: 10px;
-  margin-top: 8px;
-  margin-left: 50px;
   flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
 }
 
-/* Anchor wrapper for each icon */
 .mediaicons a {
   display: inline-block;
   border-radius: 50%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Base icon styling */
 .mediaicons a svg {
   width: 35px;
   height: 35px;
@@ -135,129 +185,135 @@
   border-radius: 50%;
 }
 
-/* Hover effect for all icons */
 .mediaicons a:hover {
   transform: scale(1.15);
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-  cursor: pointer;
 }
 
-/* Specific brand colors */
+/* === Brand Colors === */
 .mediaicons a:nth-child(1) svg {
-  background-color: #1877f2; /* Facebook */
-}
+  background-color: #1877f2;
+} /* Facebook */
 .mediaicons a:nth-child(2) svg {
-  background-color: #e4405f; /* Instagram */
-}
+  background-color: #e4405f;
+} /* Instagram */
 .mediaicons a:nth-child(3) svg {
-  background-color: #0a66c2; /* LinkedIn */
-}
+  background-color: #0a66c2;
+} /* LinkedIn */
 .mediaicons a:nth-child(4) svg {
-  background-color: #1da1f2; /* Twitter */
-}
+  background-color: #1da1f2;
+} /* Twitter */
 .mediaicons a:nth-child(5) svg {
-  background-color: #25d366; /* WhatsApp */
+  background-color: #25d366;
+} /* WhatsApp */
+
+/* === Copyright === */
+.copyright {
+  background: rgb(30, 30, 30);
+  color: #faaa16;
+  font-size: medium;
+  font-weight: medium;
+  text-align: center;
+  padding: 1rem;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .mediaicons {
-    justify-content: center;
-    margin-top: 15px;
-    margin-left: 0;
-  }
-}
-
-/* Responsive: Stack inputs on smaller screens for news letter */
-@media (max-width: 768px) {
-  .newsletterForm {
+/* === Responsive Layout === */
+@media screen and (max-width: 768px) {
+  .footercontainer {
     flex-direction: column;
+    align-items: left;
+    text-align: left;
+    margin: 0;
+    padding: 0;
   }
   .footercontainer address {
-    float: right;
+    all: unset; /* Resets inherited styles */
+    display: block;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+
+  .logoContainer {
+    align-items: start;
+  }
+
+  .logoContainer img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .logoContainer p {
+    font-size: 0.95rem;
+    text-align: left;
+    margin: 0;
+    padding: 0;
   }
 
   .emailInput,
   .submitButton {
     width: 100%;
-    border-radius: 4px;
   }
 
-  .emailInput {
-    margin-bottom: 0.75rem;
-  }
-}
-
-@media (max-width: 890px) {
-  .footercontainer {
+  .newsletterForm {
     flex-direction: column;
-
-    height: auto;
-    padding: 2em 1em;
-    text-align: left;
-    margin: 0;
   }
 
-  .footercontainer img {
-    height: 180px;
-    width: 180px;
-    margin-bottom: 1em;
-  }
-
-  .footercontainer form {
-    width: 100%;
-    max-width: 300px;
-    margin-bottom: 1.5em;
-  }
-
-  .footercontainer label,
-  .footercontainer input {
-    display: block;
-    width: 100%;
-    font-size: 0.9rem;
-    margin-top: 0.5em;
-  }
-
-  .section {
-    margin-bottom: 2em;
-    width: 100%;
-    max-width: 300px;
-  }
-
-  .section h5 {
-    font-size: 1.1rem;
-    font-weight: 700;
+  .section,
+  .footercontainer address {
+    align-items: center;
+    text-align: center;
   }
 
   .section ul {
-    padding: 0;
-    margin: 0;
-    float: left;
+    align-items: center;
   }
+}
 
-  .link {
-    padding: 8px 0;
-    display: block;
+@media screen and (max-width: 540px) {
+  .footercontainer {
+    text-align: left;
+    align-items: start;
   }
 
   .footercontainer address {
-    width: 100%;
-    max-width: 300px;
+    all: unset;
+    display: block;
     text-align: left;
-    margin-bottom: 2em;
+    margin: 0;
+    margin-bottom: 1em;
+    padding: 0;
   }
 
-  .mediaicons {
-    float: left;
+  .logoContainer img {
+    width: 90px;
+    height: 90px;
   }
 
-  .footercontainer address a {
+  .logoContainer p {
+    font-size: 0.85rem;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+
+  .emailInput {
     font-size: 0.95rem;
   }
 
-  .copyright {
-    font-size: 0.95em;
-    padding: 15px;
-    height: auto;
+  .submitButton {
+    font-size: 0.95rem;
+  }
+
+  .section h5,
+  address h5 {
+    font-size: 1rem;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+  }
+
+  .link {
+    font-size: 0.95rem;
   }
 }
