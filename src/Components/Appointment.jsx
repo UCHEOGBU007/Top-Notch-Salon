@@ -117,7 +117,7 @@ const Reservation = () => {
                 }
               >
                 <option value="" disabled>
-                  -- Choose Occasion --
+                  -- Choose Services --
                 </option>
                 <option value="Trimming">Trimming</option>
                 <option value="HairStyle">HairStyle</option>
